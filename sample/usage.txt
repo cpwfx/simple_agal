@@ -1,0 +1,3 @@
+var program:Program3D = context3D.createProgram();
+program.upload(new XXXShader(), new YYYShader());
+context3D.setProgram(program);
