@@ -17,7 +17,7 @@
 package simpleagal
 {
 
-	public class FragmentShader extends ShaderBase
+	public class FragmentShader extends Shader
 	{
 
 		protected static const _2d:TextureSamplerOption = new TextureSamplerOption(TextureSamplerOption.DIMENSION, 0x0);
@@ -103,7 +103,9 @@ package simpleagal
 		protected static const ft6:FragmentTemporary = new FragmentTemporary(6);
 
 		protected static const ft7:FragmentTemporary = new FragmentTemporary(7);
-
+		
+		protected static const nearest:TextureSamplerOption = new TextureSamplerOption(TextureSamplerOption.FILTER, 0x0);
+		
 		protected static const linear:TextureSamplerOption = new TextureSamplerOption(TextureSamplerOption.FILTER, 0x1);
 
 		protected static const miplinear:TextureSamplerOption = new TextureSamplerOption(TextureSamplerOption.MIPMAP, 0x2);

@@ -17,7 +17,7 @@
 package simpleagal
 {
 
-	public class VertexShader extends ShaderBase
+	public class VertexShader extends Shader
 	{
 
 		protected static const op:VertexOutput = new VertexOutput(0);
@@ -501,6 +501,11 @@ package simpleagal
 			addOpcode(OP_REP, null, src, null);
 		}
 
+		protected final function rsq(dst:IVertexDestination, src:IVertexSource):void
+		{
+			addOpcode(OP_RSQ, dst, src, null);
+		}
+
 		protected final function sat(dst:IVertexDestination, src:IVertexSource):void
 		{
 			addOpcode(OP_SAT, dst, src, null);
@@ -520,20 +525,10 @@ package simpleagal
 		{
 			addOpcode(OP_SGN, dst, src, null);
 		}
-		
+
 		protected final function sin(dst:IVertexDestination, src:IVertexSource):void
 		{
 			addOpcode(OP_SIN, dst, src, null);
-		}
-		
-		protected final function sqt(dst:IVertexDestination, src:IVertexSource):void
-		{
-			addOpcode(OP_SQT, dst, src, null);
-		}
-
-		protected final function rsq(dst:IVertexDestination, src:IVertexSource):void
-		{
-			addOpcode(OP_RSQ, dst, src, null);
 		}
 
 		protected final function slt(dst:IVertexDestination, src1:IVertexSource, src2:IVertexSource):void
@@ -544,6 +539,11 @@ package simpleagal
 		protected final function sne(dst:IVertexDestination, src1:IVertexSource, src2:IVertexSource):void
 		{
 			addOpcode(OP_SNE, dst, src1, src2);
+		}
+
+		protected final function sqt(dst:IVertexDestination, src:IVertexSource):void
+		{
+			addOpcode(OP_SQT, dst, src, null);
 		}
 
 		protected final function sub(dst:IVertexDestination, src1:IVertexSource, src2:IVertexSource):void

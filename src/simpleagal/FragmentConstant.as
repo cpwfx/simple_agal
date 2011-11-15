@@ -27,324 +27,324 @@ package simpleagal
 			this.direct = true;
 		}
 
-		public function get w():VertexTemporaryWithComponent
+		public function get w():FragmentConstantWithComponent
 		{
-			return createComponentType("w", VertexTemporaryWithComponent);
+			return createComponentType("w", FragmentConstantWithComponent);
 		}
 
-		public function get wx():VertexTemporaryWithComponents
+		public function get wx():FragmentConstantWithComponents
 		{
-			return createComponentType("wx", VertexTemporaryWithComponents);
+			return createComponentType("wx", FragmentConstantWithComponents);
 		}
 
-		public function get wxy():VertexTemporaryWithComponents
+		public function get wxy():FragmentConstantWithComponents
 		{
-			return createComponentType("wxy", VertexTemporaryWithComponents);
+			return createComponentType("wxy", FragmentConstantWithComponents);
 		}
 
-		public function get wxyz():VertexTemporaryWithComponents
+		public function get wxyz():FragmentConstantWithComponents
 		{
-			return createComponentType("wxyz", VertexTemporaryWithComponents);
+			return createComponentType("wxyz", FragmentConstantWithComponents);
 		}
 
-		public function get wxz():VertexTemporaryWithComponents
+		public function get wxz():FragmentConstantWithComponents
 		{
-			return createComponentType("wxz", VertexTemporaryWithComponents);
+			return createComponentType("wxz", FragmentConstantWithComponents);
 		}
 
-		public function get wxzy():VertexTemporaryWithComponents
+		public function get wxzy():FragmentConstantWithComponents
 		{
-			return createComponentType("wxzy", VertexTemporaryWithComponents);
+			return createComponentType("wxzy", FragmentConstantWithComponents);
 		}
 
-		public function get wy():VertexTemporaryWithComponents
+		public function get wy():FragmentConstantWithComponents
 		{
-			return createComponentType("wy", VertexTemporaryWithComponents);
+			return createComponentType("wy", FragmentConstantWithComponents);
 		}
 
-		public function get wyx():VertexTemporaryWithComponents
+		public function get wyx():FragmentConstantWithComponents
 		{
-			return createComponentType("wyx", VertexTemporaryWithComponents);
+			return createComponentType("wyx", FragmentConstantWithComponents);
 		}
 
-		public function get wyxz():VertexTemporaryWithComponents
+		public function get wyxz():FragmentConstantWithComponents
 		{
-			return createComponentType("wyxz", VertexTemporaryWithComponents);
+			return createComponentType("wyxz", FragmentConstantWithComponents);
 		}
 
-		public function get wyz():VertexTemporaryWithComponents
+		public function get wyz():FragmentConstantWithComponents
 		{
-			return createComponentType("wyz", VertexTemporaryWithComponents);
+			return createComponentType("wyz", FragmentConstantWithComponents);
 		}
 
-		public function get wyzx():VertexTemporaryWithComponents
+		public function get wyzx():FragmentConstantWithComponents
 		{
-			return createComponentType("wyzx", VertexTemporaryWithComponents);
+			return createComponentType("wyzx", FragmentConstantWithComponents);
 		}
 
-		public function get wz():VertexTemporaryWithComponents
+		public function get wz():FragmentConstantWithComponents
 		{
-			return createComponentType("wz", VertexTemporaryWithComponents);
+			return createComponentType("wz", FragmentConstantWithComponents);
 		}
 
-		public function get wzx():VertexTemporaryWithComponents
+		public function get wzx():FragmentConstantWithComponents
 		{
-			return createComponentType("wzx", VertexTemporaryWithComponents);
+			return createComponentType("wzx", FragmentConstantWithComponents);
 		}
 
-		public function get wzxy():VertexTemporaryWithComponents
+		public function get wzxy():FragmentConstantWithComponents
 		{
-			return createComponentType("wzxy", VertexTemporaryWithComponents);
+			return createComponentType("wzxy", FragmentConstantWithComponents);
 		}
 
-		public function get wzy():VertexTemporaryWithComponents
+		public function get wzy():FragmentConstantWithComponents
 		{
-			return createComponentType("wzy", VertexTemporaryWithComponents);
+			return createComponentType("wzy", FragmentConstantWithComponents);
 		}
 
-		public function get wzyx():VertexTemporaryWithComponents
+		public function get wzyx():FragmentConstantWithComponents
 		{
-			return createComponentType("wzyx", VertexTemporaryWithComponents);
+			return createComponentType("wzyx", FragmentConstantWithComponents);
 		}
 
-		public function get x():VertexTemporaryWithComponent
+		public function get x():FragmentConstantWithComponent
 		{
-			return createComponentType("x", VertexTemporaryWithComponent);
+			return createComponentType("x", FragmentConstantWithComponent);
 		}
 
-		public function get xw():VertexTemporaryWithComponents
+		public function get xw():FragmentConstantWithComponents
 		{
-			return createComponentType("xw", VertexTemporaryWithComponents);
+			return createComponentType("xw", FragmentConstantWithComponents);
 		}
 
-		public function get xwy():VertexTemporaryWithComponents
+		public function get xwy():FragmentConstantWithComponents
 		{
-			return createComponentType("xwy", VertexTemporaryWithComponents);
+			return createComponentType("xwy", FragmentConstantWithComponents);
 		}
 
-		public function get xwyz():VertexTemporaryWithComponents
+		public function get xwyz():FragmentConstantWithComponents
 		{
-			return createComponentType("xwyz", VertexTemporaryWithComponents);
+			return createComponentType("xwyz", FragmentConstantWithComponents);
 		}
 
-		public function get xwz():VertexTemporaryWithComponents
+		public function get xwz():FragmentConstantWithComponents
 		{
-			return createComponentType("xwz", VertexTemporaryWithComponents);
+			return createComponentType("xwz", FragmentConstantWithComponents);
 		}
 
-		public function get xwzy():VertexTemporaryWithComponents
+		public function get xwzy():FragmentConstantWithComponents
 		{
-			return createComponentType("xwzy", VertexTemporaryWithComponents);
+			return createComponentType("xwzy", FragmentConstantWithComponents);
 		}
 
-		public function get xy():VertexTemporaryWithComponents
+		public function get xy():FragmentConstantWithComponents
 		{
-			return createComponentType("xy", VertexTemporaryWithComponents);
+			return createComponentType("xy", FragmentConstantWithComponents);
 		}
 
-		public function get xyw():VertexTemporaryWithComponents
+		public function get xyw():FragmentConstantWithComponents
 		{
-			return createComponentType("xyw", VertexTemporaryWithComponents);
+			return createComponentType("xyw", FragmentConstantWithComponents);
 		}
 
-		public function get xywz():VertexTemporaryWithComponents
+		public function get xywz():FragmentConstantWithComponents
 		{
-			return createComponentType("xywz", VertexTemporaryWithComponents);
+			return createComponentType("xywz", FragmentConstantWithComponents);
 		}
 
-		public function get xyz():VertexTemporaryWithComponents
+		public function get xyz():FragmentConstantWithComponents
 		{
-			return createComponentType("xyz", VertexTemporaryWithComponents);
+			return createComponentType("xyz", FragmentConstantWithComponents);
 		}
 
-		public function get xyzw():VertexTemporaryWithComponents
+		public function get xyzw():FragmentConstantWithComponents
 		{
-			return createComponentType("xyzw", VertexTemporaryWithComponents);
+			return createComponentType("xyzw", FragmentConstantWithComponents);
 		}
 
-		public function get xz():VertexTemporaryWithComponents
+		public function get xz():FragmentConstantWithComponents
 		{
-			return createComponentType("xz", VertexTemporaryWithComponents);
+			return createComponentType("xz", FragmentConstantWithComponents);
 		}
 
-		public function get xzw():VertexTemporaryWithComponents
+		public function get xzw():FragmentConstantWithComponents
 		{
-			return createComponentType("xzw", VertexTemporaryWithComponents);
+			return createComponentType("xzw", FragmentConstantWithComponents);
 		}
 
-		public function get xzwy():VertexTemporaryWithComponents
+		public function get xzwy():FragmentConstantWithComponents
 		{
-			return createComponentType("xzwy", VertexTemporaryWithComponents);
+			return createComponentType("xzwy", FragmentConstantWithComponents);
 		}
 
-		public function get xzy():VertexTemporaryWithComponents
+		public function get xzy():FragmentConstantWithComponents
 		{
-			return createComponentType("xzy", VertexTemporaryWithComponents);
+			return createComponentType("xzy", FragmentConstantWithComponents);
 		}
 
-		public function get xzyw():VertexTemporaryWithComponents
+		public function get xzyw():FragmentConstantWithComponents
 		{
-			return createComponentType("xzyw", VertexTemporaryWithComponents);
+			return createComponentType("xzyw", FragmentConstantWithComponents);
 		}
 
-		public function get y():VertexTemporaryWithComponent
+		public function get y():FragmentConstantWithComponent
 		{
-			return createComponentType("y", VertexTemporaryWithComponent);
+			return createComponentType("y", FragmentConstantWithComponent);
 		}
 
-		public function get yw():VertexTemporaryWithComponents
+		public function get yw():FragmentConstantWithComponents
 		{
-			return createComponentType("yw", VertexTemporaryWithComponents);
+			return createComponentType("yw", FragmentConstantWithComponents);
 		}
 
-		public function get ywx():VertexTemporaryWithComponents
+		public function get ywx():FragmentConstantWithComponents
 		{
-			return createComponentType("ywx", VertexTemporaryWithComponents);
+			return createComponentType("ywx", FragmentConstantWithComponents);
 		}
 
-		public function get ywxz():VertexTemporaryWithComponents
+		public function get ywxz():FragmentConstantWithComponents
 		{
-			return createComponentType("ywxz", VertexTemporaryWithComponents);
+			return createComponentType("ywxz", FragmentConstantWithComponents);
 		}
 
-		public function get ywz():VertexTemporaryWithComponents
+		public function get ywz():FragmentConstantWithComponents
 		{
-			return createComponentType("ywz", VertexTemporaryWithComponents);
+			return createComponentType("ywz", FragmentConstantWithComponents);
 		}
 
-		public function get ywzx():VertexTemporaryWithComponents
+		public function get ywzx():FragmentConstantWithComponents
 		{
-			return createComponentType("ywzx", VertexTemporaryWithComponents);
+			return createComponentType("ywzx", FragmentConstantWithComponents);
 		}
 
-		public function get yx():VertexTemporaryWithComponents
+		public function get yx():FragmentConstantWithComponents
 		{
-			return createComponentType("yx", VertexTemporaryWithComponents);
+			return createComponentType("yx", FragmentConstantWithComponents);
 		}
 
-		public function get yxw():VertexTemporaryWithComponents
+		public function get yxw():FragmentConstantWithComponents
 		{
-			return createComponentType("yxw", VertexTemporaryWithComponents);
+			return createComponentType("yxw", FragmentConstantWithComponents);
 		}
 
-		public function get yxwz():VertexTemporaryWithComponents
+		public function get yxwz():FragmentConstantWithComponents
 		{
-			return createComponentType("yxwz", VertexTemporaryWithComponents);
+			return createComponentType("yxwz", FragmentConstantWithComponents);
 		}
 
-		public function get yxz():VertexTemporaryWithComponents
+		public function get yxz():FragmentConstantWithComponents
 		{
-			return createComponentType("yxz", VertexTemporaryWithComponents);
+			return createComponentType("yxz", FragmentConstantWithComponents);
 		}
 
-		public function get yxzw():VertexTemporaryWithComponents
+		public function get yxzw():FragmentConstantWithComponents
 		{
-			return createComponentType("yxzw", VertexTemporaryWithComponents);
+			return createComponentType("yxzw", FragmentConstantWithComponents);
 		}
 
-		public function get yz():VertexTemporaryWithComponents
+		public function get yz():FragmentConstantWithComponents
 		{
-			return createComponentType("yz", VertexTemporaryWithComponents);
+			return createComponentType("yz", FragmentConstantWithComponents);
 		}
 
-		public function get yzw():VertexTemporaryWithComponents
+		public function get yzw():FragmentConstantWithComponents
 		{
-			return createComponentType("yzw", VertexTemporaryWithComponents);
+			return createComponentType("yzw", FragmentConstantWithComponents);
 		}
 
-		public function get yzwx():VertexTemporaryWithComponents
+		public function get yzwx():FragmentConstantWithComponents
 		{
-			return createComponentType("yzwx", VertexTemporaryWithComponents);
+			return createComponentType("yzwx", FragmentConstantWithComponents);
 		}
 
-		public function get yzx():VertexTemporaryWithComponents
+		public function get yzx():FragmentConstantWithComponents
 		{
-			return createComponentType("yzx", VertexTemporaryWithComponents);
+			return createComponentType("yzx", FragmentConstantWithComponents);
 		}
 
-		public function get yzxw():VertexTemporaryWithComponents
+		public function get yzxw():FragmentConstantWithComponents
 		{
-			return createComponentType("yzxw", VertexTemporaryWithComponents);
+			return createComponentType("yzxw", FragmentConstantWithComponents);
 		}
 
-		public function get z():VertexTemporaryWithComponent
+		public function get z():FragmentConstantWithComponent
 		{
-			return createComponentType("z", VertexTemporaryWithComponent);
+			return createComponentType("z", FragmentConstantWithComponent);
 		}
 
-		public function get zw():VertexTemporaryWithComponents
+		public function get zw():FragmentConstantWithComponents
 		{
-			return createComponentType("zw", VertexTemporaryWithComponents);
+			return createComponentType("zw", FragmentConstantWithComponents);
 		}
 
-		public function get zwx():VertexTemporaryWithComponents
+		public function get zwx():FragmentConstantWithComponents
 		{
-			return createComponentType("zwx", VertexTemporaryWithComponents);
+			return createComponentType("zwx", FragmentConstantWithComponents);
 		}
 
-		public function get zwxy():VertexTemporaryWithComponents
+		public function get zwxy():FragmentConstantWithComponents
 		{
-			return createComponentType("zwxy", VertexTemporaryWithComponents);
+			return createComponentType("zwxy", FragmentConstantWithComponents);
 		}
 
-		public function get zwy():VertexTemporaryWithComponents
+		public function get zwy():FragmentConstantWithComponents
 		{
-			return createComponentType("zwy", VertexTemporaryWithComponents);
+			return createComponentType("zwy", FragmentConstantWithComponents);
 		}
 
-		public function get zwyx():VertexTemporaryWithComponents
+		public function get zwyx():FragmentConstantWithComponents
 		{
-			return createComponentType("zwyx", VertexTemporaryWithComponents);
+			return createComponentType("zwyx", FragmentConstantWithComponents);
 		}
 
-		public function get zx():VertexTemporaryWithComponents
+		public function get zx():FragmentConstantWithComponents
 		{
-			return createComponentType("zx", VertexTemporaryWithComponents);
+			return createComponentType("zx", FragmentConstantWithComponents);
 		}
 
-		public function get zxw():VertexTemporaryWithComponents
+		public function get zxw():FragmentConstantWithComponents
 		{
-			return createComponentType("zxw", VertexTemporaryWithComponents);
+			return createComponentType("zxw", FragmentConstantWithComponents);
 		}
 
-		public function get zxwy():VertexTemporaryWithComponents
+		public function get zxwy():FragmentConstantWithComponents
 		{
-			return createComponentType("zxwy", VertexTemporaryWithComponents);
+			return createComponentType("zxwy", FragmentConstantWithComponents);
 		}
 
-		public function get zxy():VertexTemporaryWithComponents
+		public function get zxy():FragmentConstantWithComponents
 		{
-			return createComponentType("zxy", VertexTemporaryWithComponents);
+			return createComponentType("zxy", FragmentConstantWithComponents);
 		}
 
-		public function get zxyw():VertexTemporaryWithComponents
+		public function get zxyw():FragmentConstantWithComponents
 		{
-			return createComponentType("zxyw", VertexTemporaryWithComponents);
+			return createComponentType("zxyw", FragmentConstantWithComponents);
 		}
 
-		public function get zy():VertexTemporaryWithComponents
+		public function get zy():FragmentConstantWithComponents
 		{
-			return createComponentType("zy", VertexTemporaryWithComponents);
+			return createComponentType("zy", FragmentConstantWithComponents);
 		}
 
-		public function get zyw():VertexTemporaryWithComponents
+		public function get zyw():FragmentConstantWithComponents
 		{
-			return createComponentType("zyw", VertexTemporaryWithComponents);
+			return createComponentType("zyw", FragmentConstantWithComponents);
 		}
 
-		public function get zywx():VertexTemporaryWithComponents
+		public function get zywx():FragmentConstantWithComponents
 		{
-			return createComponentType("zywx", VertexTemporaryWithComponents);
+			return createComponentType("zywx", FragmentConstantWithComponents);
 		}
 
-		public function get zyx():VertexTemporaryWithComponents
+		public function get zyx():FragmentConstantWithComponents
 		{
-			return createComponentType("zyx", VertexTemporaryWithComponents);
+			return createComponentType("zyx", FragmentConstantWithComponents);
 		}
 
-		public function get zyxw():VertexTemporaryWithComponents
+		public function get zyxw():FragmentConstantWithComponents
 		{
-			return createComponentType("zyxw", VertexTemporaryWithComponents);
+			return createComponentType("zyxw", FragmentConstantWithComponents);
 		}
 	}
 }

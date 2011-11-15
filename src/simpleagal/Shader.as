@@ -19,7 +19,7 @@ package simpleagal
 	import flash.utils.ByteArray;
 	import flash.utils.Endian;
 
-	internal class ShaderBase extends ByteArray
+	internal class Shader extends ByteArray
 	{
 
 		internal static const OP_ABS:uint = 0x14;
@@ -114,6 +114,10 @@ package simpleagal
 
 		internal static const OP_TEX:uint = 0x28;
 
+		internal static var _dstMaskNames:Object;
+
+		internal static var _srcMaskNames:Object;
+
 		private static var _dstMasks:Object;
 
 		private static var _indexMasks:Object;
@@ -161,12 +165,15 @@ package simpleagal
 			_indexMasks = {"x": 0x0, "y": 0x1, "z": 0x2, "w": 0x3};
 			_srcMasks = {};
 			_dstMasks = {};
+			_dstMaskNames = {};
+			_srcMaskNames = {};
 
 			for (i = 0; i < 192; i += 3)
 			{
 				_dstMasks[table[i]] = table[i + 1];
 				_srcMasks[table[i]] = table[i + 2];
-
+				_dstMaskNames[table[i + 1]] = table[i];
+				_srcMaskNames[table[i + 2]] = table[i];
 			}
 		}
 
@@ -178,7 +185,7 @@ package simpleagal
 
 		private var _nestLevel:int;
 
-		public function ShaderBase()
+		public function Shader()
 		{
 			_index = 0;
 			_nestLevel = 0;
@@ -186,6 +193,11 @@ package simpleagal
 			preAssemble();
 			assemble();
 			postAssemble();
+		}
+
+		override public function toString():String
+		{
+			return Disassembler.disassemble(this);
 		}
 
 		protected function assemble():void
@@ -196,7 +208,7 @@ package simpleagal
 		{
 			if (_index++ >= 256)
 			{
-				error("too many opcodes.");
+				error("too many opcodes."); //NLS
 				return;
 			}
 
@@ -206,7 +218,7 @@ package simpleagal
 
 				if (_nestLevel < 0)
 				{
-					error("conditional closes without open.");
+					error("conditional closes without open."); //NLS
 					return;
 				}
 			}
@@ -216,7 +228,7 @@ package simpleagal
 
 				if (_nestLevel > 4)
 				{
-					error("nesting to deep.");
+					error("nesting to deep."); //NLS
 					return;
 				}
 			}
@@ -225,7 +237,7 @@ package simpleagal
 			{
 				if ((src1 as Register).offset > 255)
 				{
-					error("index offset " + (src1 as Register).offset + " out of bounds.");
+					error("index offset " + (src1 as Register).offset + " out of bounds."); //NLS
 					return;
 				}
 			}
@@ -234,7 +246,7 @@ package simpleagal
 			{
 				if ((src2 as Register).offset > 255)
 				{
-					error("index offset " + (src2 as Register).offset + " out of bounds.");
+					error("index offset " + (src2 as Register).offset + " out of bounds."); //NLS
 					return;
 				}
 			}
@@ -266,14 +278,15 @@ package simpleagal
 					writeByte(reg.offset);
 					writeByte(_srcMasks[reg.components]);
 					writeByte(reg.type & 0xf);
-					writeByte(reg.indexType & 0xf);
 
 					if (reg.direct)
 					{
+						writeByte(0);
 						writeShort(0);
 					}
 					else
 					{
+						writeByte(reg.indexType & 0xf);
 						writeShort((1 << 15) | _indexMasks[reg.indexComponent]);
 					}
 
@@ -344,7 +357,7 @@ package simpleagal
 		{
 			if (_nestLevel !== 0)
 			{
-				error("conditional closes without open.");
+				error("conditional closes without open."); //NLS
 				return;
 			}
 
